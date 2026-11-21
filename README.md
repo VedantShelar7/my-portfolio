@@ -4,7 +4,7 @@ A responsive static portfolio website (HTML and CSS) hosted on an **Amazon EC2**
 
 **Live demo:** `http://3.25.141.109/` *(the instance is stopped when not in use to save credits, so the link may be offline)*
 
-![Live site](1.png)
+![Live site](images/01-live-site.png)
 
 ---
 
@@ -53,13 +53,13 @@ A security group works as the instance's firewall. I opened only what the site n
 | SSH | TCP | 22 | Anywhere (key-based login only) | Administer the server |
 | HTTP | TCP | 80 | Anywhere (0.0.0.0/0) | Public web traffic |
 
-![Security group rules](3.png)
+![Security group rules](images/02-security-group.png)
 
 ### 3. Confirm the instance is running
 
 I waited for the state to show **Running** with **2/2 status checks passed**, then noted the public IPv4 address.
 
-![Running instance](2.png)
+![Running instance](images/03-instance-running.png)
 
 ### 4. Connect to the server
 
